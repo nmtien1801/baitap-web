@@ -8,137 +8,177 @@
     <title>Document</title>
 </head>
 <style>
-    .header {
+    .container{
+        width: 1000px;
+    }
+    .header{
+        /* position: relative; */
+    }
+    .header .container{
         display: flex;
         justify-content: space-around;
         margin-top: 10px;
+        /* position: absolute; */
+        left: 250px;
     }
-    
+    #promotion{
+        margin: 10px;
+    }
     #left {
         display: flex;
         justify-content: space-around;
+        align-items: center;
         width: 30%;
     }
     
     #right {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 30%;
     }
     
-    .baner {
+    .baner .container{
         flex-direction: column;
         display: flex;
         align-items: center;
-    }
-    
-    .baner>#image {
+    }    
+    #image {
         display: flex;
     }
-    
+    .image_text{
+        margin: 50px;
+    }
+
     .footer {
+        /* position: relative; */
+        margin-top: 50px;
+        
+        height: 200px;
+    }
+    .footer .container{
+        background-color: black;
+        width: 1000px;
+        /* position: absolute; */
+        top: 30%;
+        left: 250px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 20px;
     }
-    
+    .footer .container div{
+        padding: 5px;
+    }
     #shop_now {
         background-color: green;
+        margin-top: 20px;
+    }
+    .accept-item img{
+        margin-left: 10px;
     }
 </style>
 
 <body>
     <div class="wraper">
-        <div class="header" style="width: 1100;">
-            <div id="left">
-                <div>shop</div>
-                <div>offers</div>
-                <div>our story</div>
-                <div>blog</div>
-            </div>
-            <div id="logo">
-                <img src="/baitap-web/0_Event promotions/logo.png" alt="">
-            </div>
-            <div id="right">
-                <div>
-                    <input type="text">
+        <div class="header" >
+            <div class="container">
+                <div id="left">
+                    <div>shop</div>
+                    <div>offers</div>
+                    <div>our story</div>
+                    <div>blog</div>
                 </div>
-                <div>
-                    <img src="/baitap-web/0_Event promotions/Button 1.png" alt="">
+                <div id="logo">
+                    <img src="/baitap-web/0_Event promotions/logo.png" alt="">
                 </div>
-                <div>
-                    <img src="/baitap-web/0_Event promotions/Avatar 1.png" alt="">
+                <div id="right">
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <img src="/baitap-web/0_Event promotions/Button 1.png" alt="">
+                    </div>
+                    <div>
+                        <img src="/baitap-web/0_Event promotions/Avatar 1.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="baner" style="width: 1100;">
-            <div id="promotion" style="font-size: 40px;">
-                PROMOTION
-            </div>
-            <div id="image">
-                <div><img src="/baitap-web/0_Event promotions/Image 1 (1).png " alt=" " width="400px "></div>
-                <div>
-                    <span>promotion title HTML viết tắt của Hypertext Markup Language là ngôn ngữ lập trình dùng để xây dựng và cấu trúc lại các thành phần có trong Website. HTML tạm dịch là ngôn ngữ</span>
-                    <div><button id="shop_now">show now</button></div>
+        <div class="baner" >
+            <div class="container">
+                <div id="promotion" style="font-size: 40px;">
+                    PROMOTION
                 </div>
-
-            </div>
-            <div id="image">
-                <div><span>promotion title HTML viết tắt của Hypertext Markup 
-                    Language là ngôn ngữ lập trình dùng để xây dựng và cấu trúc lại các thành phần có trong Website. 
-                    HTML tạm dịch là ngôn ngữ</span>
-                    <div><button id="shop_now">show now</button></div>
+                <div id="image">
+                    <div ><img src="/baitap-web/0_Event promotions/Image 1 (1).png " alt=" " width="400px "></div>
+                    <div class="image_text">
+                        <span>promotion title HTML viết tắt của Hypertext Markup Language là ngôn ngữ lập trình dùng để xây dựng và cấu trúc lại các thành phần có trong Website. HTML tạm dịch là ngôn ngữ</span>
+                        <div><button id="shop_now">show now</button></div>
+                    </div>
                 </div>
-                <div><img src="/baitap-web/0_Event promotions/image2.png " alt=" " width="400px "></div>
-
-            </div>
-            <div id="image">
-                <div><img src="/baitap-web/0_Event promotions/image3.png" alt=" " width="400px" height="250px"></div>
-                <div>
-                    <span>promotion title HTML viết tắt của Hypertext Markup Language là ngôn ngữ lập trình dùng để xây dựng và cấu trúc lại các thành phần có trong Website. HTML tạm dịch là ngôn ngữ</span>
-                    <div><button id="shop_now">show now</button></div>
+                <div id="image">
+                    <div class="image_text"><span>promotion title HTML viết tắt của Hypertext Markup
+                        Language là ngôn ngữ lập trình dùng để xây dựng và cấu trúc lại các thành phần có trong Website.
+                        HTML tạm dịch là ngôn ngữ</span>
+                        <div><button id="shop_now">show now</button></div>
+                    </div>
+                    <div><img src="/baitap-web/0_Event promotions/image2.png " alt=" " width="400px "></div>
                 </div>
+                <div id="image">
+                    <div ><img src="/baitap-web/0_Event promotions/image3.png" alt=" " width="400px" height="250px"></div>
+                    <div class="image_text">
+                        <span>promotion title HTML viết tắt của Hypertext Markup Language là ngôn ngữ lập trình dùng để xây dựng và cấu trúc lại các thành phần có trong Website. HTML tạm dịch là ngôn ngữ</span>
+                        <div><button id="shop_now">show now</button></div>
+                    </div>
+            </div>
 
             </div>
         </div>
-        <div class="footer" style="width: 1100;">
-            <div class="about">
-                <div>about</div>
-                <div>home</div>
-                <div>shop</div>
-                <div>our story</div>
-                <div>blog</div>
-                <div style="margin-left: 10px;">
-                    <select name="" id="">
-                        <option value="">english</option>
-                        <option value="">tieng viet</option>
-                    </select>
+        <div class="footer" >
+            <div class="container" >
+                <div class="about" style="color: white;">
+                    <div>about</div>
+                    <div>home</div>
+                    <div>shop</div>
+                    <div>our story</div>
+                    <div>blog</div>
+                    <div style="margin-left: 10px;">
+                        <select name="" id="">
+                            <option value="">english</option>
+                            <option value="">tieng viet</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div class="help">
-                <div>help</div>
-                <div>shipping & return</div>
-                <div>track order</div>
-                <div>FAQs</div>
-            </div>
-            <div class="contact">
-                <div>contact</div>
-                <div>phone: 231313652
+                <div class="help" style="color: white;">
+                    <div>help</div>
+                    <div>shipping & return</div>
+                    <div>track order</div>
+                    <div>FAQs</div>
                 </div>
-                <div>email: nickname1801@gmail.com
+                <div class="contact" style="color: white;">
+                    <div>contact</div>
+                    <div>phone: 231313652
+                    </div>
+                    <div>email: nickname1801@gmail.com
+                    </div>
                 </div>
-            </div>
-            <div class="receive">
-                <div>receive new promotions</div>
-                <div>duis tempor commodor</div>
-                <div>
-                    <label for="">
-                        <input type="email" >
-                        <button>subscribe</button>
-                    </label>
-                </div>
-                <div>
-                    <img src="/baitap-web/0_Event promotions/Twitter 1.png" alt=""><img src="/baitap-web/0_Event promotions/YouTube 1.png" alt=""><img src="/baitap-web/0_Event promotions/LinkedIn 1.png" alt=""><img src="/baitap-web/0_Event promotions/Facebook 1.png"
-                        alt="">
+                <div class="receive" style="color: white;">
+                    <div>receive new promotions</div>
+                    <div>duis tempor commodor</div>
+                    <div>
+                        <label for="">
+                            <input type="email" >
+                            <button>subscribe</button>
+                        </label>
+                    </div>
+                    <div class="accept-item">
+                        <img src="/baitap-web/0_Event promotions/Twitter 1.png" alt="">
+                        <img src="/baitap-web/0_Event promotions/YouTube 1.png" alt="">
+                        <img src="/baitap-web/0_Event promotions/LinkedIn 1.png" alt="">
+                        <img src="/baitap-web/0_Event promotions/Facebook 1.png"
+                            alt="">
+                    </div>
                 </div>
             </div>
         </div>
